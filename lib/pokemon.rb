@@ -1,5 +1,4 @@
 class Pokemon
-  class Pokemon
   attr_reader :id, :name, :type, :hp, :db
   @@all = []
 
@@ -28,5 +27,4 @@ class Pokemon
     database_connection.execute("UPDATE pokemon SET hp = ? WHERE id = ?", new_hp, @id)
   end
 
-end
 end
